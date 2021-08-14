@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.nmaprun.host.ports.port;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class State {
 	
 	public final static String STATE_TAG = "state" ;

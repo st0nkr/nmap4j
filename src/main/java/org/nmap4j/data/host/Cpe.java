@@ -1,6 +1,6 @@
 package org.nmap4j.data.host;
 
-import java.util.StringTokenizer;
+import com.fasterxml.jackson.annotation.JsonInclude;
 
 /**
  * A representation of the Common Platform Enumeration (CPE) in Nmap output.
@@ -28,6 +28,7 @@ import java.util.StringTokenizer;
  * @author jon.svede
  *
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Cpe {
 	
 	public final static String CPE_ATTR = "cpe" ;

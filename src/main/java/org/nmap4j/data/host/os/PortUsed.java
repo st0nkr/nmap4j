@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.host.os;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class PortUsed {
 	
 	public final static String PORT_USED_TAG = "portused" ;

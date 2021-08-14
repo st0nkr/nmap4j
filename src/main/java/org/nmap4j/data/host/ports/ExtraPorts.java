@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.host.ports;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ExtraPorts {
 	
 	private String state ;

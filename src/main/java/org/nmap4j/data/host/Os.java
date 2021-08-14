@@ -36,11 +36,12 @@ package org.nmap4j.data.host;
 
 import java.util.ArrayList;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.nmap4j.data.host.os.OsClass;
 import org.nmap4j.data.host.os.OsMatch;
 import org.nmap4j.data.host.os.PortUsed;
 
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Os {
 	
 	public final static String OS_TAG = "os" ;

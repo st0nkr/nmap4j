@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.nmaprun.host.ports.port;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Service {
 	
 	public final static String SERVICE_TAG = "service" ;

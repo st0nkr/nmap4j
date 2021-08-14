@@ -35,13 +35,10 @@
  */
 package org.nmap4j.data;
 
-import java.util.ArrayList;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import org.nmap4j.data.nmaprun.*;
 
-import org.nmap4j.data.nmaprun.Debugging;
-import org.nmap4j.data.nmaprun.Host;
-import org.nmap4j.data.nmaprun.RunStats;
-import org.nmap4j.data.nmaprun.ScanInfo;
-import org.nmap4j.data.nmaprun.Verbose;
+import java.util.ArrayList;
 
 /**
  * This class maps to the root element of NMap's XML output.
@@ -49,6 +46,7 @@ import org.nmap4j.data.nmaprun.Verbose;
  * @author jsvede
  *
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class NMapRun {
 	
 	public final static String NMAPRUN_TAG = "nmaprun" ;

@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.host;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Address {
 
 	public final static String ADDRESS_TAG = "address" ;

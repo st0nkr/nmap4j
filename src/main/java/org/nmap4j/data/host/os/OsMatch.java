@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.host.os;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OsMatch {
 	
 	public final static String OS_MATCH_TAG = "osmatch" ;

@@ -36,6 +36,7 @@ package org.nmap4j.data.nmaprun;
 
 import java.util.ArrayList;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.nmap4j.data.host.Address;
 import org.nmap4j.data.host.Distance;
 import org.nmap4j.data.host.Hostnames;
@@ -49,7 +50,7 @@ import org.nmap4j.data.host.Times;
 import org.nmap4j.data.host.Uptime;
 import org.nmap4j.data.host.trace.Trace;
 
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Host {
 	
 	public final static String HOST_TAG = "host" ;

@@ -34,10 +34,12 @@
  */
 package org.nmap4j.data.host.os;
 
-import java.util.ArrayList;
-
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.nmap4j.data.host.Cpe;
 
+import java.util.ArrayList;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class OsClass {
 	
 	public final static String OSCLASS_TAG = "osclass" ;

@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.nmaprun.host.ports.extraports;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ExtraReasons {
 	
 	private String reason ; 

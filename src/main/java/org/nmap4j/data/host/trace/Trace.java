@@ -1,5 +1,7 @@
 package org.nmap4j.data.host.trace;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.ArrayList;
 
 /**
@@ -8,6 +10,7 @@ import java.util.ArrayList;
  * @author omark
  *
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Trace {
 	public final static String TRACE_TAG = "trace" ;
 	public final static String PORT_ATTR = "port" ;

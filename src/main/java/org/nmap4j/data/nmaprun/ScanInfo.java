@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.nmaprun;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ScanInfo {
 	
 	public final static String SCANINFO_TAG = "scaninfo" ;

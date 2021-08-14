@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.nmaprun.hostnames;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Hostname {
 	
 	public final static String HOSTNAME_TAG = "hostname" ;

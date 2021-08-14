@@ -1,5 +1,6 @@
 package org.nmap4j.data.host.trace;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.nmap4j.data.nmaprun.Host;
 
 /**
@@ -8,6 +9,7 @@ import org.nmap4j.data.nmaprun.Host;
  * @author omark
  *
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Hop {
 	public final static String HOP_TAG = "hop" ;
 	public final static String TTL_ATTR = "ttl" ;

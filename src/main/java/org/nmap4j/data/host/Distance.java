@@ -35,6 +35,9 @@
  */
 package org.nmap4j.data.host;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Distance {
 	
 	public final static String DISTANCE_TAG = "distance" ;

@@ -34,9 +34,11 @@
  */
 package org.nmap4j.data.nmaprun;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.nmap4j.data.nmaprun.runstats.Finished;
 import org.nmap4j.data.nmaprun.runstats.Hosts;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class RunStats {
 	
 	public final static String RUNSTATS_TAG = "runstats" ;

@@ -34,11 +34,13 @@
  */
 package org.nmap4j.data.host;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.nmap4j.data.nmaprun.hostnames.Hostname;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Hostnames {
 	
 	public final static String HOSTNAMES_TAG = "hostnames" ;

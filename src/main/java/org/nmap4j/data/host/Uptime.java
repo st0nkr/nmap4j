@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.host;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Uptime {
 	
 	public final static String UPTIME_TAG = "uptime" ;

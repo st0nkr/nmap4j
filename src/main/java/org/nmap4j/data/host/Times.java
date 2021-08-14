@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.host;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Times {
 	
 	public final static String TIMES_TAG = "times" ;

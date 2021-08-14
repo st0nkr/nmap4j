@@ -34,9 +34,13 @@
  */
 package org.nmap4j.data.host.ports;
 
-import org.nmap4j.data.nmaprun.host.ports.port.Service;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import org.nmap4j.data.nmaprun.host.ports.port
+
+		.Service;
 import org.nmap4j.data.nmaprun.host.ports.port.State;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Port {
 	
 	public final static String PORT_TAG = "port" ;

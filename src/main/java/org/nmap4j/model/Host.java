@@ -1,7 +1,10 @@
 package org.nmap4j.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 import java.util.ArrayList;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Host {
 
 	

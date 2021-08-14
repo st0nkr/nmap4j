@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.nmaprun;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Debugging {
 	
 	public static final String DEBUGGING_TAG = "debugging" ;

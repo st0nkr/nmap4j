@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.nmaprun;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Verbose {
 	
 	public final static String VERBOSE_TAG = "verbose" ;

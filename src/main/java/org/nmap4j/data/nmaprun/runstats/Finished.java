@@ -34,6 +34,9 @@
  */
 package org.nmap4j.data.nmaprun.runstats;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Finished {
 	
 	public final static String FINISHED_TAG = "finished" ;

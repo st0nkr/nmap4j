@@ -1,5 +1,7 @@
 package org.nmap4j.model;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /**
  * A class to flatten the port data structure that comes out of Nmap.
  * 
@@ -19,6 +21,7 @@ package org.nmap4j.model;
       </port> 
  *
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Port {
 
 	private String protocol ;

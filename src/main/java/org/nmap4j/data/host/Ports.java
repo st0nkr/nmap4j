@@ -37,9 +37,10 @@ package org.nmap4j.data.host;
 
 import java.util.ArrayList;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import org.nmap4j.data.host.ports.Port;
 
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Ports {
 
 	public final static String PORTS_TAG = "ports" ;

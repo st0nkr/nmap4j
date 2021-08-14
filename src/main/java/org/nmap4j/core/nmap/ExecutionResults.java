@@ -34,6 +34,8 @@
  */
 package org.nmap4j.core.nmap;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+
 /**
  * This class contains the various outputs from an execution of nmap. This
  * includes the stdout and stderr.
@@ -45,6 +47,7 @@ package org.nmap4j.core.nmap;
  * @author jonsvede
  * 
  */
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ExecutionResults {
 
 	private String errors;
